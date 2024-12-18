@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-data</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .biodata {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .bio-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .bio-info {
+            flex: 1;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-left: 20px;
+            object-fit: cover;
+        }
+
+        .extra-content {
+            display: none;
+            transition: max-height 0.3s ease;
+        }
+
+        .see-more {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .see-more:hover {
+            background-color: #0056b3;
+        }
+
+        .declaration {
+            margin-top: 20px;
+        }
+
+        .signature {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Bio-data</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+    </header>
+    <main class="biodata">
+        <h2>Bio Data</h2>
+        <div class="bio-content">
+            <div class="bio-info">
+                <p>Name: THEJAS BABU R</p>
+                <p>Father's Name: RAMAIAH N</p>
+                <p>Mobile: 7760588770</p>
+                <span id="more" class="extra-content">
+                    <p>Email ID: Thr22cs@cmrit.ac.in</p>
+                    <p>Gender: Male</p>
+                    <p>Date of Birth: 29/06/2004</p>
+                    <p>Nationality: Indian</p>
+                    <p>Languages Known: Tamil, Kannada, English, Hindi</p>
+                    <p>Address: 1st main, Siddapura, Bengaluru 560062</p>
+                </span>
+                <button class="see-more" onclick="toggleMore()">See More</button>
+            </div>
+            <img src="R.png" alt="Profile Picture" class="profile-picture">
+        </div>
+        <div class="declaration">
+            <h3>Declaration</h3>
+            <p>I hereby declare that all the information provided here is true to the best of my knowledge.</p>
+            <p>Place: Bengaluru</p>
+            <p>Date: 20/11/2024</p>
+            <p class="signature">Signature: Thejas</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Babu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMore() {
+            var moreText = document.getElementById("more");
+            var seeMoreBtn = document.querySelector(".see-more");
+            if (moreText.style.display === "none" || moreText.style.display === "") {
+                moreText.style.display = "block";
+                seeMoreBtn.innerText = "See Less";
+            } else {
+                moreText.style.display = "none";
+                seeMoreBtn.innerText = "See More";
+            }
+        }
+    </script>
+</body>
+</html>
