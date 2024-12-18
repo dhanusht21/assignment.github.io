@@ -11,11 +11,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color:white;
+            background-color: #cacdd1;
         }
 
         header, footer {
-            background-color: violet;
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -33,16 +33,18 @@
 
         .biodata {
             padding: 20px;
-            max-width: 800px;
+            max-width: 900px;
             margin: 20px auto;
-            background-color:white;
+            background-color: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .bio-content {
             display: flex;
+            flex-direction: row;
             align-items: center;
+            justify-content: space-between;
         }
 
         .bio-info {
@@ -53,8 +55,8 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin-left: 20px;
             object-fit: cover;
+            border: 3px solid #007BFF;
         }
 
         .extra-content {
@@ -79,11 +81,20 @@
         }
 
         .declaration {
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .signature {
             font-style: italic;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
@@ -99,27 +110,27 @@
         <h2>Bio Data</h2>
         <div class="bio-content">
             <div class="bio-info">
-                <p>Name: DHANUSH T</p>
-                <p>Father's Name: THANGARAJ A</p>
-                <p>Mobile: 9739227242</p>
+                <p><strong>Name:</strong> Dhanush T</p>
+                <p><strong>Father's Name:</strong> Thangaraj A</p>
+                <p><strong>Mobile:</strong> +91 9739227242</p>
                 <span id="more" class="extra-content">
-                    <p>Email ID: dht22cs@cmrit.ac.in</p>
-                    <p>Gender: Male</p>
-                    <p>Date of Birth: 21/07/2004</p>
-                    <p>Nationality: Indian</p>
-                    <p>Languages Known: Tamil, Kannada, English, Hindi</p>
-                    <p>Address: 1st main, Marathalli, Bengaluru 560037</p>
+                    <p><strong>Email ID:</strong> dht22cs@cmrit.ac.in</p>
+                    <p><strong>Gender:</strong> Male</p>
+                    <p><strong>Date of Birth:</strong> 21/07/2004</p>
+                    <p><strong>Nationality:</strong> Indian</p>
+                    <p><strong>Languages Known:</strong> Tamil, Kannada, English, Hindi</p>
+                    <p><strong>Address:</strong> 8th cross Marathahalli, Bengaluru 560037</p>
                 </span>
                 <button class="see-more" onclick="toggleMore()">See More</button>
             </div>
-            <img src="R.png" alt="Profile Picture" class="profile-picture">
+            <img src="Screenshot 2024-12-08 125252.png" alt="Profile Picture" class="profile-picture">
         </div>
         <div class="declaration">
             <h3>Declaration</h3>
             <p>I hereby declare that all the information provided here is true to the best of my knowledge.</p>
-            <p>Place: Bengaluru</p>
-            <p>Date: 20/11/2024</p>
-            <p class="signature">Signature: Dhanush T</p>
+            <p><strong>Place:</strong> Bengaluru</p>
+            <p><strong>Date:</strong> 20/11/2024</p>
+            <p class="signature"><strong>Signature:</strong> Dhanush T </p>
         </div>
     </main>
     <footer>
